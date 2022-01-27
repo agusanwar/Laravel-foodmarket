@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('phoneNumber')->nullable();
             $table->string('city')->nullable();
 
-            $table->string('roles')->default('USER');
+            $table->string('roles')->default('ADMIN');
 
             $table->timestamps();
         });
