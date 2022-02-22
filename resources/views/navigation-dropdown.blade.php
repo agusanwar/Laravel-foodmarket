@@ -22,13 +22,8 @@
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="/dashboard/food" :active="request()->routeIs('dashboard/food')">
+                    <x-jet-nav-link href="/dashboard/product" :active="request()->routeIs('dashboard/product')">
                         {{ __('Product') }}
-                    </x-jet-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="/dashboard/food" :active="request()->routeIs('dashboard/food')">
-                        {{ __('Category') }}
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
