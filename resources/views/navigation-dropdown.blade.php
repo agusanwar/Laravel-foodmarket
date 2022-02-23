@@ -64,23 +64,23 @@
                         <x-jet-dropdown-link href="{{ route('profile.show') }}">
                             {{ __('Profile') }}
                         </x-jet-dropdown-link>
-
+{{-- 
                         @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                             <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
                                 {{ __('API Tokens') }}
                             </x-jet-dropdown-link>
-                        @endif
+                        @endif --}}
 
                         <div class="border-t border-gray-100"></div>
 
                         <!-- Team Management -->
-                        @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
+                        {{-- @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Team') }}
-                            </div>
+                            </div> --}}
 
                             <!-- Team Settings -->
-                            <x-jet-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
+                            {{-- <x-jet-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
                                 {{ __('Team Settings') }}
                             </x-jet-dropdown-link>
 
@@ -90,19 +90,19 @@
                                 </x-jet-dropdown-link>
                             @endcan
 
-                            <div class="border-t border-gray-100"></div>
+                            <div class="border-t border-gray-100"></div> --}}
 
                             <!-- Team Switcher -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
+                            {{-- <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Switch Teams') }}
-                            </div>
-
+                            </div> --}}
+{{-- 
                             @foreach (Auth::user()->allTeams() as $team)
                                 <x-jet-switchable-team :team="$team" />
-                            @endforeach
+                            @endforeach --}}
 
-                            <div class="border-t border-gray-100"></div>
-                        @endif
+                            {{-- <div class="border-t border-gray-100"></div>
+                        @endif --}}
 
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
