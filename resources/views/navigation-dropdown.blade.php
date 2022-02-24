@@ -219,14 +219,6 @@
                         <x-jet-application-mark class="block h-9 w-auto" />
                     </a>
                 </div>
-
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-jet-nav-link>
-                </div>
-
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
@@ -239,7 +231,7 @@
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="/dashboard/user" :active="request()->routeIs('dashboard/user')">
+                    <x-jet-nav-link href="/dashboard/user" :active="request()->routeIs('dashboard/users')">
                         {{ __('Product') }}
                     </x-jet-nav-link>
                 </div>
