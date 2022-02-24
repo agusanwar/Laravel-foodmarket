@@ -88,7 +88,7 @@ class TransactionController extends Controller
         
         //Konfigurasi MIDTRANS
         Config::$serverKey = config('services.midtrans.serverKey');
-        Config::$ClientKey = config('services.midtrans.clientKey');
+        // Config::$ClientKey = config('services.midtrans.clientKey');
         Config::$isProduction = config('services.midtrans.isProduction');
         Config::$isSanitized = config('services.midtrans.isSanitized');
         Config::$is3ds = config('services.midtrans.is3ds');
